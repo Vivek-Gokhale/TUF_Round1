@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 50px;
+    margin-left: 33%;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ce0101;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid #ce0101;
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+.flip-card-front {
+    background: linear-gradient(120deg, whitesmoke 60%, lightgrey 88%, lightgrey 40%, #ce0101 48%);
+    color: black;
+    padding: 10px;
+}
+
+.flip-card-back {
+    background: linear-gradient(120deg, whitesmoke 60%, lightgrey 88%, lightgrey 40%, #ce0101 48%);
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+.like-dislike{
+    display: flex;
+    margin-right: 200px;
+    margin-top: 100px;
+  
+    flex-direction: column;
+    justify-content: left;
+}

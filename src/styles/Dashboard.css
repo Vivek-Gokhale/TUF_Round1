@@ -1,0 +1,63 @@
+.container1{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.action-btn {
+    padding: 5px 15px;
+    background-color: #ce0101;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.question-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.question-table th {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ddd; 
+}
+
+.question-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; 
+}
+
+.question-table tr:last-child td {
+    border-bottom: none; 
+}
+
+.edit-link, .delete-link {
+    text-decoration: underline;
+    color: blue;
+    font-size: 14px;
+}
+
+.edit-link:hover, .delete-link:hover {
+    color: darkblue;
+}
+
+.edit-link {
+    margin-right: 5px;
+}
+
+.delete-link {
+    margin-left: 5px;
+}
+button{
+    background: none;
+    border: none;
+}
+
